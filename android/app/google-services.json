@@ -1,0 +1,142 @@
+{
+  "project_info": {
+    "project_number": "749157065262",
+    "project_id": "fir-cdba5",
+    "storage_bucket": "fir-cdba5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:749157065262:android:b08b44455cc2bedb7775bf",
+        "android_client_info": {
+          "package_name": "com.example.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "749157065262-scsh2e1ususep9kah21nadqonqpo4mkr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.firebase",
+            "certificate_hash": "e999721cf203b61a55c70467992bd331254b9c16"
+          }
+        },
+        {
+          "client_id": "749157065262-0it3u1cj4vks86omjib7t8udfbab5ba1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcrairSv8Odb-Rxr6MEFn359FUg4qY9NU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "749157065262-0it3u1cj4vks86omjib7t8udfbab5ba1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "749157065262-6nhbqfpcb0drcat4j6te5r0i7n4jc93u.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.thebookstoreapp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:749157065262:android:22d3d92262f009ff7775bf",
+        "android_client_info": {
+          "package_name": "com.example.hci_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "749157065262-027m5i57g5qgds7tf47vs1tprckprbf1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hci_project",
+            "certificate_hash": "e999721cf203b61a55c70467992bd331254b9c16"
+          }
+        },
+        {
+          "client_id": "749157065262-0it3u1cj4vks86omjib7t8udfbab5ba1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcrairSv8Odb-Rxr6MEFn359FUg4qY9NU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "749157065262-0it3u1cj4vks86omjib7t8udfbab5ba1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "749157065262-6nhbqfpcb0drcat4j6te5r0i7n4jc93u.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.thebookstoreapp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:749157065262:android:9ecc6ae851a367187775bf",
+        "android_client_info": {
+          "package_name": "com.example.thebookstoreapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "749157065262-pi26lqnsnm7pbmm5v1d5pqfs2bmo5ion.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.thebookstoreapp",
+            "certificate_hash": "e999721cf203b61a55c70467992bd331254b9c16"
+          }
+        },
+        {
+          "client_id": "749157065262-0it3u1cj4vks86omjib7t8udfbab5ba1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcrairSv8Odb-Rxr6MEFn359FUg4qY9NU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "749157065262-0it3u1cj4vks86omjib7t8udfbab5ba1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "749157065262-6nhbqfpcb0drcat4j6te5r0i7n4jc93u.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.thebookstoreapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

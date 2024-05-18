@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HCI_Project</string>
+    <string name="facebook_app_id">805429474429306</string>
+    <string name="fb_login_protocol_scheme">b1bc6412ed4135a77e46869bd64bd857</string>
+
+</resources>
