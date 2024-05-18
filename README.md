@@ -16,7 +16,7 @@
   <h2>Installation</h2>
   <ol>
     <li><strong>Clone the repository:</strong>
-      <pre><code>git clone https://github.com/yourusername/hci-note-taking-app.git</code></pre>
+      <pre><code>git clone https://github.com/MohammedAlsalehi033/The-Ultimate-note-app.git</code></pre>
     </li>
     <li><strong>Navigate to the project directory:</strong>
       <pre><code>cd hci-note-taking-app</code></pre>
