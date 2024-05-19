@@ -232,20 +232,22 @@ class _NoteScreenState extends State<NoteScreen>
       builder: (BuildContext context) {
         return AlertDialog(
           title: Text('Assistant'),
-          content: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              TextField(
-                controller: textEditingController,
-                decoration: InputDecoration(labelText: 'Enter your query'),
-                onChanged: (value) {
-                  userInput = value;
-                },
-              ),
-              SizedBox(height: 16),
-              Text('Note Content:'),
-              Text(_textEditingController.text),
-            ],
+          content: SingleChildScrollView(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                TextField(
+                  controller: textEditingController,
+                  decoration: InputDecoration(labelText: 'Enter your query'),
+                  onChanged: (value) {
+                    userInput = value;
+                  },
+                ),
+                SizedBox(height: 16),
+                Text('Note Content:'),
+                Text(_textEditingController.text),
+              ],
+            ),
           ),
           actions: <Widget>[
             TextButton(
