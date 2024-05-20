@@ -50,6 +50,8 @@ dependencies:
   google_mlkit_text_recognition: ^0.8.1
   image_picker: ^1.0.8
   google_ml_kit: ^0.7.3
+  shared_preferences: ^2.2.3
+  flutter_colorpicker: ^1.1.0
 
 dev_dependencies:
   flutter_test:

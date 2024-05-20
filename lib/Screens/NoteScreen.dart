@@ -292,7 +292,7 @@ class _NoteScreenState extends State<NoteScreen>
         headers: {
           'Content-Type': 'application/json',
           'Authorization':
-          'Bearer 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',
+          'Bearer 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',
         },
         body: jsonEncode({
           "model": "gpt-3.5-turbo",

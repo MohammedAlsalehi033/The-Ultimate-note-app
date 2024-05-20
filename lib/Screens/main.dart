@@ -3,14 +3,20 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:hci_project/Screens/NoteScreen.dart';
-
+import 'package:shared_preferences/shared_preferences.dart';
 import '../Style/myColors.dart';
 import '../Widgerts/Widgets.dart';
 import 'SignInPage.dart';
 import 'ViewNotesScreen.dart';
-
+import 'Setteings.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  SharedPreferences prefs = await SharedPreferences.getInstance();
+  MyColors.isDarkMode = prefs.getBool('isDarkMode') ?? true;
+  int? primaryColorValue = prefs.getInt('primaryColor');
+  if (primaryColorValue != null) {
+    MyColors.primaryColor = Color(primaryColorValue);
+  }
   await Firebase.initializeApp(
       options: const FirebaseOptions(
     apiKey: 'AIzaSyDcrairSv8Odb-Rxr6MEFn359FUg4qY9NU',
@@ -27,7 +33,13 @@ Future<void> main() async {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: MainPage());
+    return MaterialApp(
+        theme: ThemeData(
+          primaryColor: MyColors.primaryColor,
+          scaffoldBackgroundColor: MyColors.backgroundColor,
+          textTheme: TextTheme(bodyText2: TextStyle(color: MyColors.textColor)),
+        ),
+        home: MainPage());
   }
 }
 
@@ -73,7 +85,7 @@ class _MainPageState extends State<MainPage> {
               pageController: pageController,
               index: _selectedItem
             ),
-            MyWidgets.dummyPage("Page 3"),
+            SettingsScreen(),
           ],
         ),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
