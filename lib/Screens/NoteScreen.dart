@@ -12,6 +12,7 @@ import "package:http/http.dart" as http;
 import "dart:convert";
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 class NoteScreen extends StatefulWidget {
   final String noteId;
@@ -292,7 +293,7 @@ class _NoteScreenState extends State<NoteScreen>
         headers: {
           'Content-Type': 'application/json',
           'Authorization':
-          'Bearer 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',
+          'Bearer ${dotenv.env["GPT"]}',
         },
         body: jsonEncode({
           "model": "gpt-3.5-turbo",

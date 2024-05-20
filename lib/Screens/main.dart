@@ -4,23 +4,29 @@ import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:hci_project/Screens/NoteScreen.dart';
-
+import 'package:shared_preferences/shared_preferences.dart';
 import '../Style/myColors.dart';
 import '../Widgerts/Widgets.dart';
 import 'SignInPage.dart';
 import 'ViewNotesScreen.dart';
-
+import 'Setteings.dart';
 Future<void> main() async {
 
   await dotenv.load(fileName: ".env");
   WidgetsFlutterBinding.ensureInitialized();
+  SharedPreferences prefs = await SharedPreferences.getInstance();
+  MyColors.isDarkMode = prefs.getBool('isDarkMode') ?? true;
+  int? primaryColorValue = prefs.getInt('primaryColor');
+  if (primaryColorValue != null) {
+    MyColors.primaryColor = Color(primaryColorValue);
+  }
   await Firebase.initializeApp(
       options: const FirebaseOptions(
-    apiKey: 'AIzaSyDcrairSv8Odb-Rxr6MEFn359FUg4qY9NU',
-    appId: '1:749157065262:android:22d3d92262f009ff7775bf',
-    messagingSenderId: '749157065262',
-    projectId: 'fir-cdba5',
-  ));
+        apiKey: 'AIzaSyDcrairSv8Odb-Rxr6MEFn359FUg4qY9NU',
+        appId: '1:749157065262:android:22d3d92262f009ff7775bf',
+        messagingSenderId: '749157065262',
+        projectId: 'fir-cdba5',
+      ));
 
   User? currentUser = FirebaseAuth.instance.currentUser;
 
@@ -30,7 +36,13 @@ Future<void> main() async {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: MainPage());
+    return MaterialApp(
+        theme: ThemeData(
+          primaryColor: MyColors.primaryColor,
+          scaffoldBackgroundColor: MyColors.backgroundColor,
+          textTheme: TextTheme(bodyText2: TextStyle(color: MyColors.textColor)),
+        ),
+        home: MainPage());
   }
 }
 
@@ -70,13 +82,13 @@ class _MainPageState extends State<MainPage> {
           children: [
             ViewNotesPage(pageController: pageController),
             NoteScreen(
-              noteId: "",
-              title: "",
-              initialContent: "",
-              pageController: pageController,
-              index: _selectedItem
+                noteId: "",
+                title: "",
+                initialContent: "",
+                pageController: pageController,
+                index: _selectedItem
             ),
-            MyWidgets.dummyPage("Page 3"),
+            SettingsScreen(),
           ],
         ),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,

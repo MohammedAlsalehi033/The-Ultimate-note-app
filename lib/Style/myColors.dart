@@ -1,9 +1,17 @@
 import 'package:flutter/material.dart';
 
 class MyColors {
-  static  Color primaryColor = Colors.grey[800]!;
-  static  Color backgroundColor = Colors.grey[900]!;
-  static  Color inactiveColor = Colors.grey;
-  static  Color textColor = Colors.white;
+  static bool isDarkMode = true;
+  static const Color defaultPrimaryColor = Colors.grey;
 
+  static Color _primaryColor = defaultPrimaryColor;
+
+  static Color get primaryColor => _primaryColor;
+  static Color get backgroundColor => isDarkMode ? Colors.grey[900]! : Colors.white;
+  static Color get inactiveColor => isDarkMode ? Colors.grey : Colors.grey[300]!;
+  static Color get textColor => isDarkMode ? Colors.white : Colors.black;
+
+  static set primaryColor(Color color) {
+    _primaryColor = color;
+  }
 }
