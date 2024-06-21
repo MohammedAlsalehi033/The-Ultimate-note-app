@@ -46,16 +46,16 @@
 <p>Here are some screenshots of the app in action:</p>
 <ul>
   <li><strong>Home Screen:</strong></li>
-  <img src="https://github.com/MohammedAlsalehi033/The-Ultimate-note-app/blob/master/Hotpot%202.png" alt="Home Screen" width="200">
+  <img src="https://github.com/MohammedAlsalehi033/The-Ultimate-note-app/blob/master/Hotpot%201.png" alt="Home Screen" width="200">
 
   <li><strong>Create Note Screen:</strong></li>
-  <img src="https://github.com/MohammedAlsalehi033/The-Ultimate-note-app/screenshots/create_note.png" alt="Create Note Screen" width="200">
+  <img src="https://github.com/MohammedAlsalehi033/The-Ultimate-note-app/blob/master/Hotpot%202.png" alt="Create Note Screen" width="200">
 
-  <li><strong>Speech-to-Text in Action:</strong></li>
-  <img src="https://github.com/MohammedAlsalehi033/The-Ultimate-note-app/screenshots/speech_to_text.png" alt="Speech-to-Text" width="200">
+  <li><strong>GPT assistant:</strong></li>
+  <img src="https://github.com/MohammedAlsalehi033/The-Ultimate-note-app/blob/master/Hotpot%203.png" alt="Speech-to-Text" width="200">
 
-  <li><strong>Image-to-Text in Action:</strong></li>
-  <img src="https://github.com/MohammedAlsalehi033/The-Ultimate-note-app/screenshots/image_to_text.png" alt="Image-to-Text" width="200">
+  <li><strong>Customization:</strong></li>
+  <img src="https://github.com/MohammedAlsalehi033/The-Ultimate-note-app/blob/master/Hotpot%200.png" alt="Image-to-Text" width="200">
 </ul>
 
 <h2>Contributions</h2>
