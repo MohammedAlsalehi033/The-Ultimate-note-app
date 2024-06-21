@@ -46,7 +46,7 @@
 <p>Here are some screenshots of the app in action:</p>
 <ul>
   <li><strong>Home Screen:</strong></li>
-  <img src="https://github.com/MohammedAlsalehi033/The-Ultimate-note-app/screenshots/home_screen.png" alt="Home Screen" width="200">
+  <img src="https://github.com/MohammedAlsalehi033/The-Ultimate-note-app/blob/master/Hotpot%202.png" alt="Home Screen" width="200">
 
   <li><strong>Create Note Screen:</strong></li>
   <img src="https://github.com/MohammedAlsalehi033/The-Ultimate-note-app/screenshots/create_note.png" alt="Create Note Screen" width="200">
